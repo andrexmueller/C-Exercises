@@ -1,6 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+/*
+    Hanoi Tower
+    Recursive Solution
+*/
+
+
 void solve_hanoi_tower(int pegs, char orig, char dest, char aux) {
     if (pegs == 1) {
         printf("Move peg %d from %c to %c\n", pegs, orig, dest);
