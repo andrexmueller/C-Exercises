@@ -2,6 +2,26 @@
 #include<stdio.h>
 #include<stdbool.h>
 
+/*
+    Insertion Sort Implementation
+*/
+
+
+void print_arr(int arr[], int length);
+void sort(int arr[], int length);
+void random_arr(int arr[], int n);
+
+int main(int argc, char *argv[]) {
+    
+    int arr[10];
+    random_arr(arr, 10);
+    print_arr(arr, 10);
+    sort(arr, 10);
+    print_arr(arr, 10);
+    
+}
+
+
 void print_arr(int arr[], int length) {
     printf("[ ");
     for (int i = 0; i < length; i++) {
@@ -35,17 +55,4 @@ void random_arr(int arr[], int n) {
         arr[i]  = rand() % 50;   
     }
     return;
-}
-
-
-int main(int argc, char *argv[]) {
-    
-    int arr[10];
-    random_arr(arr, 10);
-    print_arr(arr, 10);
-    sort(arr, 10);
-    print_arr(arr, 10);
-    
-
-
 }
