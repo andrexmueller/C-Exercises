@@ -1,2 +1,6 @@
 hanoi.exe
 *.exe
+*.bat
+foo.*
+ms.c
+input*.*
